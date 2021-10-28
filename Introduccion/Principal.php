@@ -6,7 +6,7 @@ $ValorCuota = CUOTA;
 echo "El valor de cuota: $ValorCuota";</code></pre>
 <?php
 /*No necesitan utilizar el $ y se asignan una unica vez */
-//Definir una constante
+//Definir una constante estatica
 define('CUOTA', 2000);
 $ValorCuota = CUOTA;
 echo "El valor de cuota: $ValorCuota";
