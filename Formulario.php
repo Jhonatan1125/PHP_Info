@@ -27,7 +27,7 @@
                 <h4>Tipos de input</h4>
                 <hr>
                 <div class="accordion" id="accordionExample">
-                    <div class="card">
+                    <div class="card"><!-- Button -->
                         <div class="card-header" id="Button1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Btn1" aria-expanded="true" aria-controls="Btn1">
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Checkbox -->
                         <div class="card-header" id="Checkbox1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Check1" aria-expanded="false" aria-controls="Check1">
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Color -->
                         <div class="card-header" id="Color1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Col1" aria-expanded="false" aria-controls="Col1">
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Date -->
                         <div class="card-header" id="Date1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Dat1" aria-expanded="false" aria-controls="Dat1">
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Datetime-local -->
                         <div class="card-header" id="DateTime1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Datime1" aria-expanded="false" aria-controls="Datime1">
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Email -->
                         <div class="card-header" id="Email1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Mail1" aria-expanded="false" aria-controls="Mail1">
@@ -134,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- File -->
                         <div class="card-header" id="File1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Fil1" aria-expanded="false" aria-controls="Fil1">
@@ -151,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Hidden -->
                         <div class="card-header" id="Hidden1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Hid1" aria-expanded="false" aria-controls="Hid1">
@@ -169,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Image -->
                         <div class="card-header" id="Image1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Img1" aria-expanded="false" aria-controls="Img1">
@@ -181,13 +181,13 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="">Submit con imagen</label>
-                                    <input type="image" src="img/enviar.ico" alt="Submit" width="38" height="38">
+                                    <input type="image" src="/cursophp/theme/img/enviar.ico" alt="Submit" width="38" height="38">
                                 </div>
                                 <pre><code>&lt;label for=""&gt;Submit con imagen&lt;/label&gt;<br>&lt;input type="image" src="img/enviar.ico" alt="Submit" width="38" height="38"&gt;</code></pre>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Month -->
                         <div class="card-header" id="Month1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Mon1" aria-expanded="false" aria-controls="Mon1">
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Number -->
                         <div class="card-header" id="Number1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Num1" aria-expanded="false" aria-controls="Num1">
@@ -221,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Password -->
                         <div class="card-header" id="Password1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Pass1" aria-expanded="false" aria-controls="Pass1">
@@ -238,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Radio -->
                         <div class="card-header" id="Radio1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Rad1" aria-expanded="false" aria-controls="Rad1">
@@ -256,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Range -->
                         <div class="card-header" id="Range1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Ran1" aria-expanded="false" aria-controls="Ran1">
@@ -273,7 +273,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Reset -->
                         <div class="card-header" id="Reset1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Res1" aria-expanded="false" aria-controls="Res1">
@@ -290,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Search -->
                         <div class="card-header" id="Search1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Ser1" aria-expanded="false" aria-controls="Ser1">
@@ -308,7 +308,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Submit -->
                         <div class="card-header" id="Submit1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Sub1" aria-expanded="false" aria-controls="Sub1">
@@ -325,7 +325,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Tel -->
                         <div class="card-header" id="Tel1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#t1" aria-expanded="false" aria-controls="t1">
@@ -342,7 +342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Time -->
                         <div class="card-header" id="Time1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Tim1" aria-expanded="false" aria-controls="Tim1">
@@ -359,7 +359,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Url -->
                         <div class="card-header" id="Url1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#Ur1" aria-expanded="false" aria-controls="Ur1">
@@ -376,7 +376,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card"><!-- Week -->
                         <div class="card-header" id="Week1">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#We1" aria-expanded="false" aria-controls="We1">
@@ -447,9 +447,7 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <?php include_once 'Footer.php';?>
 </body>
 
 </html>

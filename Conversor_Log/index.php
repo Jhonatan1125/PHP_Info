@@ -90,7 +90,7 @@ if (isset($_POST['convertir'])) {
 </head>
 
 <body>
-    
+
 
     <div class="container">
         <?php include_once '../nav.php' ?>
@@ -179,6 +179,9 @@ if (isset($_POST['convertir'])) {
         </form>
     </div>
 
+    <?php 
+    include_once dirname( __DIR__ )."/Footer.php";
+    ?>
 </body>
 
 </html>

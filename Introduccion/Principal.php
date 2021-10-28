@@ -1,8 +1,11 @@
 <h2>Definir variables</h2>
 <hr>
+<p></p>
+<pre><code>define('CUOTA', 2000);
+$ValorCuota = CUOTA;
+echo "El valor de cuota: $ValorCuota";</code></pre>
 <?php
 /*No necesitan utilizar el $ y se asignan una unica vez */
-
 //Definir una constante
 define('CUOTA', 2000);
 $ValorCuota = CUOTA;

@@ -7,7 +7,7 @@ if (isset($_SESSION["usuario"])) {
 }
 ?>
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.php">
+    <a class="navbar-brand" href="/Cursophp/index.php">
         <img src="\Cursophp\theme\img\php.png" width="50" height="30" class="d-inline-block align-top" alt="">
     </a>
 
@@ -18,16 +18,16 @@ if (isset($_SESSION["usuario"])) {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.php">Inicio</a>
+                <a class="nav-link" href="/Cursophp/index.php">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Formulario
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="Formulario.php">Acerca de</a>
+                    <a class="dropdown-item" href="/Cursophp/Formulario.php">Acerca de</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Conversor_Log">Eje. Logitud</a>
+                    <a class="dropdown-item" href="/Cursophp/Conversor_Log">Eje. Logitud</a>
                     <a class="dropdown-item" href="#">otros</a>
                 </div>
             </li>
