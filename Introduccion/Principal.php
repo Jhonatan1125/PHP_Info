@@ -1,74 +1,71 @@
-<h2>Definir variables</h2>
+<h2>Variables</h2>
 <hr>
-<p></p>
-<pre><code>define('CUOTA', 2000);
-$ValorCuota = CUOTA;
-echo "El valor de cuota: $ValorCuota";</code></pre>
+<p>Una variable comienza con $ seguido del nombre de esta</p>
+<pre><code>//Las variables con texto siempre van con comillas
+//El tipo de variable se asigna automaticamente
+//Las variables son sensibles a mayusculas y minusculas
+$nombre = "Jhonatan G";
+$edad = 20;
+
+$valor1 = 1;
+$valor2 = 19;
+echo $valor1 + $valor2." Resultado";
+</code></pre>
 <?php
-/*No necesitan utilizar el $ y se asignan una unica vez */
-//Definir una constante estatica
-define('CUOTA', 2000);
-$ValorCuota = CUOTA;
-echo "El valor de cuota: $ValorCuota";
-//Buenas practicas con costantes
-//1.TODO EN MAYUSCULA 
-//2.No Utilizar doble guion   
-//
-define('NOMBRE', 'Jhonatan Gonzalez');
+//Probar codigo
+
 ?>
-<h2>Constantes Magica</h2>
+
+<h2>Variable Constante</h2>
 <hr>
+<p><strong>-Define-</strong> una constante con nombre determinado</p>
+<pre><code>//No necesita utilizar el signo de $ y se asignan una unica vez
+//No suele cambiar
+define('VALOR', 2000);//Es sensible a las mayusculas y minisculas
+echo VALOR;</code></pre>
+<?php
+//Probar codigo
+
+?>
+
+<h2>Constantes Magicas</h2>
+<hr>
+<p>Hay nueve constantes mágicas que cambian dependiendo de dónde se utilicen. Por ejemplo, el valor de __LINE__depende de la línea en la que se usa en su secuencia de comandos. Todas estas constantes "mágicas" se resuelven en tiempo de compilación, a diferencia de las constantes regulares, que se resuelven en tiempo de ejecución.</p>
+<pre><code>&lt;?php echo "Directorio actual: " . __DIR__;?&gt;
+&lt;?php echo "Nombre del archivo actual: " . __FILE__; ;?&gt;
+</code></pre>
 <ol>
     <li><?php echo "Numero de linea: " . __LINE__; ?></li>
     <li><?php echo "Directorio actual: " . __DIR__; ?></li>
     <li><?php echo "Nombre del archivo actual: " . __FILE__; ?></li>
-    <li><?php echo "Para funciones anonimas: " . __FUNCTION__; ?></li>
 </ol>
 <a href='https://www.php.net/manual/en/language.constants.magic.php'>Consultar constantes magicas</a>
-<h2>Expresiones y operadores</h2>
+
+
+<h1>Funciones Server</h1>
 <hr>
+<p><strong>-$_SERVER-</strong> es una variable súper global de PHP que contiene información sobre encabezados, rutas y ubicaciones de scripts.</p>
+<pre><code>&lt;?php echo $_SERVER['HTTP_HOST'];
+echo $_SERVER['REQUEST_TIME'];
+echo $_SERVER['REQUEST_TIME_FLOAT']; ?&gt;</code></pre>
 <?php
-//Operador condicional
-$Permiso = (true) ? "Entra" : "No entra";
-echo "Operador condicional: " . $Permiso;
-//Operador logico and or
-$Permiso = true;
-$autentificado = false;
-echo "<br>Operador logico:   ";
-echo ($Permiso && $autentificado) ? "Bienvenido" : "Registrese";
-//Operador de union
-echo "<br>";
-echo "Operador Union:   ";
-$nombrecompleto = "Juan";
-$nombrecompleto .= " Andres";
-$nombrecompleto .= " Escobar";
-echo $nombrecompleto;
-//saber parametros del valores en el sistema
+//Probar codigo
+
 ?>
-<ol>
-    <li><?php echo "Tamaño de un entero " . PHP_INT_SIZE; ?></li>
-    <li><?php echo "Minimo de un entero " . PHP_INT_MIN; ?></li>
-    <li><?php echo "Maximo de un entero " . PHP_INT_MAX; ?></li>
-</ol>
-<?php
-//Contar caracteres de un string
-$Caracter = "Jhonatan Santiago Gonzalez Martinez";
-echo $Caracter;
-echo "<br>Numero de caracteres de string: " . strlen($Caracter);
-echo "<br>Con unset() se borra una variable del programa y de la memoria";
-?>
+<?php echo $_SERVER['HTTP_HOST'] . "<br>";
+echo $_SERVER['REQUEST_TIME'] . "<br>";
+echo $_SERVER['REQUEST_TIME_FLOAT']; ?>
 <h2>Namespace</h2>
 <hr>
 <?php include "ConstNamesSpace.php";
 echo constantes1\NOMBRE_ARCHIVO;
 ?>
-<h2>IF - ELSE</h2>
-<hr>
-<p>= = = Sirve para que en la comparacion tambien pida que sea el mismo tipo de dato</p>
 <h2>Incluir Archivos</h2>
 <hr>
-<p>Include sirve para imprimir archivos asi existan errores en otra lineas
-    <br> require no imprime si hay errores
-    <br> _once sirve para no repetir el archivo mas de dos veces
-</p>
-<?php include 'Ciclos.php'; ?>
+<p><Strong>-Include-</Strong> Nos permite incluir un archivo de otro. Sino lo encuentra solo genera un warning que permite continuar</p>
+<pre><code>&lt;?php include Principal.php;?&gt;</code></pre>
+<p><Strong>-Require-</Strong> Lo mismo que include pero mas exigente, en caso de fallo producira un error fatal, no permitira continuar con el proceso</p>
+<pre><code>&lt;?php Require Principal.php;?&gt;</code></pre>
+<p><Strong>-Require_once-</Strong> identico a require excepto que PHP verifica si el archivo ya ha sido incluido y si es asi, no se incluye o duplica</p>
+<pre><code>&lt;?php Require_once Principal.php;?&gt;</code></pre>
+

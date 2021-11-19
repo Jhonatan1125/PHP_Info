@@ -1,3 +1,4 @@
+<?php $temas = array('Principal', 'Texto', 'Arrays', 'Foreach', 'Funciones', 'Excepciones', 'Archivos', 'POO'); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,40 +16,34 @@
         <div class="row centrado">
             <div class="col-3">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-Principal-tab" data-toggle="pill" href="#Principal" role="tab" aria-controls="Principal" aria-selected="true">Principal</a>
-                    <a class="nav-link" id="v-String-tab" data-toggle="pill" href="#String" role="tab" aria-controls="String" aria-selected="false">String</a>
-                    <a class="nav-link" id="v-Arrays-tab" data-toggle="pill" href="#Arrays" role="tab" aria-controls="Arrays" aria-selected="false">Arrays</a>
-                    <a class="nav-link" id="v-Foreach-tab" data-toggle="pill" href="#Foreach" role="tab" aria-controls="Foreach" aria-selected="false">Foreach</a>
-                    <a class="nav-link" id="v-Funciones-tab" data-toggle="pill" href="#Funciones" role="tab" aria-controls="Funciones" aria-selected="false">Funciones</a>
-                    <a class="nav-link" id="v-Excepciones-tab" data-toggle="pill" href="#Excepciones" role="tab" aria-controls="Excepciones" aria-selected="false">Excepciones</a>
-                    <a class="nav-link" id="v-Archivos-tab" data-toggle="pill" href="#Archivos" role="tab" aria-controls="Archivos" aria-selected="false">Archivos</a>
-                    
+                    <?php foreach ($temas as $valor) :
+                        if ($valor == 'Principal') :
+                    ?>
+                            <a class="nav-link active" id="v-<?php echo $valor ?>-tab" data-toggle="pill" href="#<?php echo $valor ?>" role="tab" aria-controls="<?php echo $valor ?>" aria-selected="true"><?php echo $valor ?></a>
+                        <?php else : ?>
+                            <a class="nav-link" id="v-<?php echo $valor ?>-tab" data-toggle="pill" href="#<?php echo $valor ?>" role="tab" aria-controls="<?php echo $valor ?>" aria-selected="true"><?php echo $valor ?></a>
+                        <?php endif; ?>
 
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="Principal" role="tabpanel" aria-labelledby="v-Principal-tab">
-                        <?php include 'Introduccion/Principal.php'; ?>
-                    </div>
-                    <div class="tab-pane fade" id="String" role="tabpanel" aria-labelledby="v-String-tab">
-                        <?php include 'Introduccion/String.php'; ?>
-                    </div>
-                    <div class="tab-pane fade" id="Arrays" role="tabpanel" aria-labelledby="v-Arrays-tab">
-                        <?php include 'Introduccion/arrays.php'; ?>
-                    </div>
-                    <div class="tab-pane fade" id="Foreach" role="tabpanel" aria-labelledby="v-Foreach-tab">
-                        <?php include 'Introduccion/Foreach.php'; ?>
-                    </div>
-                    <div class="tab-pane fade" id="Funciones" role="tabpanel" aria-labelledby="v-Funciones-tab">
-                        <?php include 'Introduccion/Funciones.php'; ?>
-                    </div>
-                    <div class="tab-pane fade" id="Excepciones" role="tabpanel" aria-labelledby="v-Excepciones-tab">
-                        <?php include 'Introduccion/excepciones.php'; ?>
-                    </div>
-                    <div class="tab-pane fade" id="Archivos" role="tabpanel" aria-labelledby="v-Archivos-tab">
-                        <?php include 'Introduccion/Archivos.php'; ?>
-                    </div>
+                    <?php foreach ($temas as $valor) :
+                        if ($valor == 'Principal') : ?>
+                            <div class="tab-pane fade show active" id="<?php echo $valor ?>" role="tabpanel" aria-labelledby="v-<?php echo $valor ?>-tab">
+                                <?php include 'Introduccion/' . $valor . '.php'; ?>
+                            </div>
+                        <?php elseif ($valor == 'POO') : ?>
+                            <div class="tab-pane fade" id="<?php echo $valor ?>" role="tabpanel" aria-labelledby="v-<?php echo $valor ?>-tab">
+                                <?php include 'Introduccion/' . $valor . '/index.php'; ?>
+                            </div>
+                        <?php else : ?>
+                            <div class="tab-pane fade" id="<?php echo $valor ?>" role="tabpanel" aria-labelledby="v-<?php echo $valor ?>-tab">
+                                <?php include 'Introduccion/' . $valor . '.php'; ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>

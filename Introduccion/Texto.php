@@ -1,5 +1,3 @@
-
-
 <h2>Strings</h2>
 <hr>
 <?php
