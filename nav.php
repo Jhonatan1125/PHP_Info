@@ -8,7 +8,7 @@ if (isset($_SESSION["usuario"])) {
 ?>
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
     <a class="navbar-brand" href="/Cursophp/index.php">
-        <img src="\app\theme\img\php.png" width="50" height="30" class="d-inline-block align-top" alt="">
+        <img src="\Cursophp\theme\img\php.png" width="50" height="30" class="d-inline-block align-top" alt="">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

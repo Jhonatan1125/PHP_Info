@@ -1,4 +1,18 @@
-<?php $temas = array('Principal', 'Texto', 'Arrays', 'Foreach', 'Funciones', 'Excepciones', 'Archivos', 'POO'); ?>
+<?php
+$ruta = 'Introduccion';
+$resultado = scandir($ruta);
+$cont = 0;
+$terminos = array();
+foreach ($resultado as $key) {
+    if (is_file($ruta . "/" . $key)) {
+        $termino = str_replace(".php", "", $key);
+        $terminos[$cont] = $termino;
+        $cont++;
+    }
+}
+$excluir = array('ConstNamesSpace','Return');
+$terminos = array_diff($terminos, $excluir);
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -16,7 +30,7 @@
         <div class="row centrado">
             <div class="col-3">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <?php foreach ($temas as $valor) :
+                    <?php foreach ($terminos as $valor) :
                         if ($valor == 'Principal') :
                     ?>
                             <a class="nav-link active" id="v-<?php echo $valor ?>-tab" data-toggle="pill" href="#<?php echo $valor ?>" role="tab" aria-controls="<?php echo $valor ?>" aria-selected="true"><?php echo $valor ?></a>
@@ -29,14 +43,10 @@
             </div>
             <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <?php foreach ($temas as $valor) :
+                    <?php foreach ($terminos as $valor) :
                         if ($valor == 'Principal') : ?>
                             <div class="tab-pane fade show active" id="<?php echo $valor ?>" role="tabpanel" aria-labelledby="v-<?php echo $valor ?>-tab">
                                 <?php include 'Introduccion/' . $valor . '.php'; ?>
-                            </div>
-                        <?php elseif ($valor == 'POO') : ?>
-                            <div class="tab-pane fade" id="<?php echo $valor ?>" role="tabpanel" aria-labelledby="v-<?php echo $valor ?>-tab">
-                                <?php include 'Introduccion/' . $valor . '/index.php'; ?>
                             </div>
                         <?php else : ?>
                             <div class="tab-pane fade" id="<?php echo $valor ?>" role="tabpanel" aria-labelledby="v-<?php echo $valor ?>-tab">

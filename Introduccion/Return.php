@@ -28,3 +28,4 @@ ValidarUsuario("cliente@gmail.com");
 echo "<br>";
 ValidarUsuario("");
 echo "<br>";
+?>

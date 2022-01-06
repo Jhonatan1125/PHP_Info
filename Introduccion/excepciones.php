@@ -1,5 +1,7 @@
-<?php
-    //try catch
+<h2>Excepciones</h2>
+<hr>
+<p>Describre un error o comportamiento inesperado de un script php</p>
+<pre><code>//try catch
     //Ejemplo 1
     function dividir($x,$y) :int{
         if ($y <= 0) {
@@ -17,3 +19,8 @@
         echo "Captura excepcion:".$e->getMessage();
         echo "<br>";
     }
+</code></pre>
+<?php
+//Probar codigo
+
+?>

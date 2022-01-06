@@ -23,6 +23,8 @@ echo $valor1 + $valor2." Resultado";
 //No suele cambiar
 define('VALOR', 2000);//Es sensible a las mayusculas y minisculas
 echo VALOR;</code></pre>
+<p><strong>-get_defined_constants(true)-</strong> funcion con la cuales podemos ver las variables constantes declaradas</p>
+<pre><code>print_r (get_defined_constants(true));</code></pre>
 <?php
 //Probar codigo
 

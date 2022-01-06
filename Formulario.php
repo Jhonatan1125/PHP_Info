@@ -430,7 +430,7 @@
                         <?php endif; ?>
                         <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="info">
+                                <input type="text" class="form-control" name="info" required pattern="[A-Za-z]+">
                             </div>
                             <input type="submit" class="btn btn-primary" name="enviar" value="Enviar">
                         </form>

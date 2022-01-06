@@ -5,3 +5,4 @@ namespace constantes1;
 
 //constantes
 const NOMBRE_ARCHIVO = __NAMESPACE__."ConstNamesSpace.php";
+?>

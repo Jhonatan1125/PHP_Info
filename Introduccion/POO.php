@@ -1,7 +1,9 @@
 <?php
-require_once 'persona.php';
-require_once 'usuario.php';
-require_once 'admin.php';
+/*
+require_once './POO/persona.php';
+require_once './POO/usuario.php';
+require_once './POO/admin.php';
+*/
 ?>
 
 <h2>Porgramacion Orientada a objetos en PHP</h2>
